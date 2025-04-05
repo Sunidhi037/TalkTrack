@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/dashboard_style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="#"><img src="logo.png" alt="Logo"></a>
+                <span class="product-name">MyProduct</span>
+            </div>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </nav>
+
+    <section class="meeting-section">
+        <div class="meeting-container">
+            <h2>Connect to Your Google Meet</h2>
+            <input type="text" id="meet-link" class="meet-input" placeholder="Paste Google Meet link here">
+            <button class="join-meet" onclick="joinMeeting()">Join Meeting</button>
+        </div>
+    </section>
+    
+
+    <section class="features-section">
+        <h2>What You Can Do in Your Meeting</h2>
+        <div class="features-grid">
+            <div class="feature">
+                <h3>Speech-to-Text Transcription</h3>
+                <p>Convert meeting audio to text in real-time.</p>
+            </div>
+            <div class="feature">
+                <h3>Speaker Identification</h3>
+                <p>Recognize and separate different speakers in a conversation.</p>
+            </div>
+            <div class="feature">
+                <h3>Meeting Summarization</h3>
+                <p>Generate a concise summary of your meeting automatically.</p>
+            </div>
+            <div class="feature">
+                <h3>Keyword Extraction</h3>
+                <p>Identify important topics and keywords discussed.</p>
+            </div>
+            <div class="feature">
+                <h3>Integration with Notion</h3>
+                <p>Save meeting notes directly into your Notion workspace.</p>
+            </div>
+            <div class="feature">
+                <h3>Task Management in Trello</h3>
+                <p>Create Trello tasks based on meeting discussions.</p>
+            </div>
+            <div class="feature">
+                <h3>Google Calendar Task Scheduling</h3>
+                <p>Automatically schedule tasks and reminders in Google Calendar.</p>
+            </div>
+            <div class="feature">
+                <h3>Action Item Extraction</h3>
+                <p>Detect and extract key action points from conversations.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3 class="footer-title">TalkTrack 🎙</h3>
+                <p class="footer-description">Your smart meeting assistant that listens, transcribes, and summarizes
+                    meetings so you can stay focused on the discussion.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#about" class="footer-link">About</a></li>
+                    <li><a href="#pricing" class="footer-link">Pricing</a></li>
+                    <li><a href="#features" class="footer-link">Features</a></li>
+                    <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Contact</h4>
+                <ul class="footer-contact">
+                    <li><a href="mailto:support@talktrack.com" class="footer-contact-link">support@talktrack.com</a>
+                    </li>
+                    <li><a href="tel:+1234567890" class="footer-contact-link">+1 (234) 567-890</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="footer-social">
+                    <a href="https://facebook.com" class="social-icon">FB</a>
+                    <a href="https://twitter.com" class="social-icon">TW</a>
+                    <a href="https://linkedin.com" class="social-icon">LN</a>
+                    <a href="https://instagram.com" class="social-icon">IG</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 TalkTrack. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/dashboard_script.js"></script>
+</body>
+</html>
